@@ -6,7 +6,34 @@ import org.openqa.selenium.WebDriver;
 public class Associatepage {
  WebDriver driver;
  private By editbutton = By.xpath("(//div[text()=\"Doctor\"])[1]/..//span[@ng-if]");
- private By optoutcheckbox = By.id("optout");
+ public By getEditbutton() {
+	return editbutton;
+}
+public By getOptoutcheckbox() {
+	return optoutcheckbox;
+}
+public By getSavebutton() {
+	return savebutton;
+}
+public By getCancelbutton() {
+	return cancelbutton;
+}
+public By getOptoutonlinetext() {
+	return optoutonlinetext;
+}
+public By getOptoutinformation_saved_text() {
+	return optoutinformation_saved_text;
+}
+public By getNo_text() {
+	return No_text;
+}
+public By getYes_confirmText() {
+	return Yes_confirmText;
+}
+public By getSuccessnotificationpopup() {
+	return successnotificationpopup;
+}
+private By optoutcheckbox = By.id("optout");
  private By savebutton  = By.id("save");
  private By cancelbutton = By.id("cancel");
  private By optoutonlinetext = By.xpath("//label[text()='Opt out Online Scheduling']");
