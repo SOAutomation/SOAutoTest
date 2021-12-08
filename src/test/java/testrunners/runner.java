@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 		
 		features = {"src\\main\\resources\\AppFeatures"},
 		glue = { "StepDefinations", "AppHooks" }, 
-		tags = "@32962",
+		tags = "@32932",
 		monochrome = true,
 		dryRun = true,
 		plugin = {"pretty",
