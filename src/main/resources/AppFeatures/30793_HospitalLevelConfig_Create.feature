@@ -2,11 +2,7 @@ Feature: Hospital Level Config - Create
 
   @32962
   Scenario: To Check the Override start time for online appointments
-  Given User logged into Okta
-  Then Petware login screen should display
-  When User enter valid Username "<username>" and password "<password>"
-  And Click on login button
-  Then Visit Management page should display
+  Given User is in Visit Management page
   When Click on Admin tab from top navigation bar
 	And Click on Hospital Info 
 	Then Login popup should display
@@ -18,11 +14,7 @@ Feature: Hospital Level Config - Create
 
 	@32963
   Scenario: Verify the the Validation of the Override start time for online appointments
-  Given User logged into Okta
-  Then Petware login screen should display
-  When User enter valid Username "<username>" and password "<password>"
-  And Click on login button
-  Then Visit Management page should display
+  Given User is in Visit Management page
   When Click on Admin tab from top navigation bar
 	And Click on Hospital Info 
 	Then Login popup should display

@@ -20,6 +20,11 @@ public class OnlineSchedulingPage {
 	//Delay Time
 	private By delaytimeTitle = By.xpath("//label[@for='delaytime']");
 	private By delaytimeSubtitle = By.xpath("//label[@for='delaytime']/following-sibling::p");
-	
+	private By delayOption = By.xpath("//label[@for='delaytime']/following-sibling::div[@class='ng-scope']//a");
+	private By noDelay = By.xpath("//li[contains(text(),'No delay')]");
+	private By delay30min = By.xpath("//li[contains(text(),'30 mins delay')]");
+	private By delay60min = By.xpath("//li[contains(text(),'1 hour delay')]");
+	private By delay90min = By.xpath("//li[contains(text(),'90 mins delay')]");
+	private By delay120min = By.xpath("//li[contains(text(),'2 hours delay')]");
 	
 }

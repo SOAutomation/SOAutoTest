@@ -19,6 +19,7 @@ public class LoginSteps {
 		String url = fu.getPropertyKeyValue("url");
 		DriverFactory.getDriver().get(url);
 		wu.implicitWait30(DriverFactory.getDriver());
+		Thread.sleep(10000);
 		
 	}
 
