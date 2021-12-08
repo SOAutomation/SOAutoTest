@@ -8,11 +8,11 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features = {"src\\main\\resources\\AppFeatures\\Login.feature"},
+		features = {"src\\main\\resources\\AppFeatures"},
 		glue = { "StepDefinations", "AppHooks" }, 
-		//tags = "@32967",
+		tags = "@32962",
 		monochrome = true,
-		dryRun = false,
+		dryRun = true,
 		plugin = {"pretty",
 				"html:target/HTMLReporthtml/htmlreport.html",
 				
